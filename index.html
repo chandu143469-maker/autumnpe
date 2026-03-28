@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutumnPe Login</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(to bottom, #4e73a1, #3f6795);
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 40px;
+  letter-spacing: 2px;
+}
+
+.container {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.input-box {
+  background: #0c2d5a;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.input-box input {
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 40px;
+  width: 90%;
+  padding: 18px;
+  border-radius: 30px;
+  border: none;
+  background: #1b3c66;
+  color: white;
+  font-size: 18px;
+}
+
+button:hover {
+  background: #102b4a;
+}
+
+.link {
+  margin-top: 10px;
+  text-align: right;
+  margin-right: 20px;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>LOG IN</h2>
+
+<div class="container">
+
+  <div class="input-box">
+    <input type="text" id="phone" placeholder="+91 Enter Your Phone Number">
+  </div>
+
+  <div class="input-box">
+    <input type="password" id="password" placeholder="Enter Password">
+  </div>
+
+  <div class="link">Forget Password</div>
+
+  <button onclick="login()">UPDATE</button>
+
+</div>
+
+<script>
+function UPDATE() {
+  let phone = document.getElementById("phone").value;
+  let password = document.getElementById("password").value;
+
+  if(phone === "" || password === "") {
+    alert("Please fill all fields");
+  } else {
+    alert("Login Successful ✅");
+
+    // Telegram bot open (yaha tumhara bot username hai)
+    window.location.href = "https://t.me/Autumnpe291848_bot";
+  }
+}
+</script>
+
+</body>
+</html>
